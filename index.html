@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shape"></div>
+
+    <div class="calculator">
+        <div class="display">
+            <div id="history" class="history">457-198</div>
+            <div id="result" class="result">259</div>
+            <div class="equal-sign">=</div>
+        
+            
+
+        </div>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="button">C</button>
+            <button onclick="inputOperator('/')">/</button>
+            <button onclick="calculatePercentage('%')">%</button>
+            <button onclick="inputOperator('*')">x</button>
+            <button onclick="inputNumber('7')">7</button>
+            <button onclick="inputNumber('8')">8</button>
+            <button onclick="inputNumber('9')">9</button>
+            <button onclick="togglesign('±')">±</button>
+            <button onclick="inputNumber('4')">4</button>
+            <button onclick="inputNumber('5')">5</button>
+            <button onclick="inputNumber('6')">6</button>
+            <button onclick="inputOperator('-')">-</button>
+            <button onclick="inputNumber('1')">1</button>
+            <button onclick="inputNumber('2')">2</button>
+            <button onclick="inputNumber('3')">3</button>
+            <button onclick="inputOperator('+')">+</button>
+            <button onclick="inputNumber('0')">0</button>
+            <button onclick="inputNumber('.')">.</button>
+            <button onclick="deleteLast()">←</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
